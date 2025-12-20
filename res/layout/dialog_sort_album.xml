@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_curve"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Sort by"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/sortOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortCustom"
+            android:text="Custom order"  />
+
+        <RadioButton
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortNameAZ"
+            android:text="Name (A to Z)" />
+
+        <RadioButton
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortNameZA"
+            android:text="Name (Z to A)" />
+
+        <RadioButton
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortMostItems"
+            android:text="Items (most to fewest)" />
+
+        <RadioButton
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortFewestItems"
+            android:text="Items (fewest to most)" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelBtn"
+            android:text="Cancel"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doneBtn"
+            android:text="Done"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
